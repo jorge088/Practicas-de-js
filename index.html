@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Pruebas de JS</title>
+</head>
+
+<body>
+    <div class="contenedor">
+        <!-- Practica 1- probar js para cambiar el fondo de un cuadrado -->
+        <section class="practica1">
+            <h2>Cambiar el color de un cuadrado</h2>
+            <p>Primera forma: Ingrese el color que quiera. (Escriba el nombre en ingles, puede usar el sistema
+                hexadecimal /#FFF)</p>
+            <div class="practica1__cont1">
+                <input class="practica1__ingreso" id="input" type="text">
+                <div class="practica1__boton" onclick="cambiarFondo()">Cambiar</div>
+            </div>
+            <p>Segunda forma: Puede cambiar el color con los siguientes botones.</p>
+            <div class="practica1__cont2">
+                <div class="practica1__boton" onclick="cambiarFondoCuadro('red')">Cambiar a rojo</div>
+                <div class="practica1__boton" onclick="cambiarFondoCuadro('blue')">Cambiar a azul</div>
+                <div class="practica1__boton" onclick="cambiarFondoCuadro('green')">Cambiar a verde</div>
+                <div class="practica1__boton" onclick="cambiarFondoCuadro('yellow')">Cambiar a amarillo</div>
+            </div>
+            <div id="cuadro" class="cuadro"></div>
+        </section>
+        <!-- Practica2 - Calculadora basica usando JS -->
+        <section class="practica2">
+            <h2>Calculadora Basica</h2>
+            <p>Realiza las operaciones de suma, resta, multiplicación y división. Ingrese los 2 numeros y elija la
+                operación.</p>
+            <form class="practica2__form" name="calculadora">
+                <p>Ingrese el primer operando.</p>
+                <input type="number" name="operando1">
+                <p>Ingrese el segundo operando.</p>
+                <input type="number" name="operando2">
+                <p>Elija la operación que quiere realizar.</p>
+                <div class="practica2__form__botones">
+                    <input type="button" value="Sumar" onclick="calcular('+')">
+                    <input type="button" value="Restar" onclick="calcular('-')">
+                    <input type="button" value="Multiplicar" onclick="calcular('*')">
+                    <input type="button" value="Dividir" onclick="calcular('/')">
+                </div>
+                <p>El resultado es:</p>
+                <div id="calculadora-resultado" class="practica2__form__resultado"></div>
+
+            </form>
+        </section>
+
+
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

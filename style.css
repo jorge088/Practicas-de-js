@@ -1,0 +1,92 @@
+body{
+    background-image:url('./assetts/img/background.jpg');
+    color: white
+}
+.contenedor{
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+h2{
+    font-size: 1.5em;
+    text-decoration:underline;
+    margin: 1em 0;
+}
+p{
+    margin: 0;
+    font-size: 1.2em;
+    text-align: center;
+}
+.practica1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.practica1__cont1{
+    margin: 1rem auto;
+    text-align: center;
+    display: flex;
+    gap: 20px;
+}
+.practica1__cont2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 10px;
+    margin: 1rem auto;
+}
+.practica1__boton{
+    padding: 7px;
+    color: black;
+    border: 1px solid black;
+    border-radius: 10px;
+    transition: .5s;
+    background-color: rgba(236, 215, 24, 0.836);
+}
+.practica1__boton:hover{
+    cursor: pointer;
+    background-color: rgb(216, 139, 84);
+}
+.cuadro{
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    margin: 2rem auto;
+    transition: .5s;
+    border: 1px solid black;
+}
+.practica2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.practica2__form{
+    margin: 2rem 0;
+    padding: 10px;
+    border: 2px solid white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.practica2__form p{
+    margin-top: .5rem;
+    font-style: italic;
+}
+.practica2__form input{
+    padding: 7px;
+    font-size: 1.2rem;
+    margin: .8rem auto;
+}
+.practica2__form__botones{
+    flex-direction: row;
+}
+.practica2__form__resultado{
+    margin: 1rem auto;
+    font-size: 2rem;
+    font-weight: bold;
+}
