@@ -18,14 +18,14 @@
                 hexadecimal /#FFF)</p>
             <div class="practica1__cont1">
                 <input class="practica1__ingreso" id="input" type="text">
-                <div class="practica1__boton" onclick="cambiarFondo()">Cambiar</div>
+                <div class="boton" onclick="cambiarFondo()">Cambiar</div>
             </div>
             <p>Segunda forma: Puede cambiar el color con los siguientes botones.</p>
             <div class="practica1__cont2">
-                <div class="practica1__boton" onclick="cambiarFondoCuadro('red')">Cambiar a rojo</div>
-                <div class="practica1__boton" onclick="cambiarFondoCuadro('blue')">Cambiar a azul</div>
-                <div class="practica1__boton" onclick="cambiarFondoCuadro('green')">Cambiar a verde</div>
-                <div class="practica1__boton" onclick="cambiarFondoCuadro('yellow')">Cambiar a amarillo</div>
+                <div class="boton" onclick="cambiarFondoCuadro('red')">Cambiar a rojo</div>
+                <div class="boton" onclick="cambiarFondoCuadro('blue')">Cambiar a azul</div>
+                <div class="boton" onclick="cambiarFondoCuadro('green')">Cambiar a verde</div>
+                <div class="boton" onclick="cambiarFondoCuadro('yellow')">Cambiar a amarillo</div>
             </div>
             <div id="cuadro" class="cuadro"></div>
         </section>
@@ -50,6 +50,26 @@
                 <div id="calculadora-resultado" class="practica2__form__resultado"></div>
 
             </form>
+        </section>
+        <section class="practica3">
+            <h2>Cambiar el color de un cuadrado V2.0</h2>
+            <p>Al igual que el primer ejercicio, se cambia el color de un cuadrado, ésta vez utilizando checksbox</p>
+
+            <form class="practica3__form" name="cambiarColorForm">
+                <p>Seleccione el color:</p>
+                <div>
+                    <input type="Radio" name="colores" value="#ffffff" checked> Blanco
+                    <input type="Radio" name="colores" value="#ff0000"> Rojo
+                    <input type="Radio" name="colores" value="#00ff00"> Verde
+                    <input type="Radio" name="colores" value="#0000ff"> Azul
+                    <input type="Radio" name="colores" value="#ffff00"> Amarillo
+                    <input type="Radio" name="colores" value="#ff00ff"> Morado
+                    <input type="Radio" name="colores" value="#000000"> Negro
+                </div>
+                <input class="boton" type="Button" value="Cambia Color" onclick="cambiarColor()">
+            </form>
+            <div id="cuadro2" class="cuadro"></div>
+
         </section>
 
 

@@ -14,9 +14,21 @@ h2{
     margin: 1em 0;
 }
 p{
-    margin: 0;
+    margin: .5rem 0;
     font-size: 1.2em;
     text-align: center;
+}
+.boton{
+    padding: 7px;
+    color: black;
+    border: 1px solid black;
+    border-radius: 10px;
+    transition: .5s;
+    background-color: rgba(236, 215, 24, 0.836);
+}
+.boton:hover{
+    cursor: pointer;
+    background-color: rgb(216, 139, 84);
 }
 .practica1{
     display: flex;
@@ -39,18 +51,7 @@ p{
     gap: 10px;
     margin: 1rem auto;
 }
-.practica1__boton{
-    padding: 7px;
-    color: black;
-    border: 1px solid black;
-    border-radius: 10px;
-    transition: .5s;
-    background-color: rgba(236, 215, 24, 0.836);
-}
-.practica1__boton:hover{
-    cursor: pointer;
-    background-color: rgb(216, 139, 84);
-}
+
 .cuadro{
     width: 200px;
     height: 200px;
@@ -89,4 +90,16 @@ p{
     margin: 1rem auto;
     font-size: 2rem;
     font-weight: bold;
+}
+.practica3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.practica3__form{
+    text-align: center;
+}
+.practica3__form div{
+    margin: 1rem 0;
 }
