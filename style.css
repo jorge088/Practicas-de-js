@@ -96,6 +96,7 @@ p{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 .practica3__form{
     text-align: center;
